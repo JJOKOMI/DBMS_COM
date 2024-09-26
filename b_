@@ -1,0 +1,15 @@
+use korea_db;
+
+select name
+from members
+order by name;
+
+select *
+from members
+limit 2 offset 2;
+
+select name, max(points)
+from members
+group by name desc
+limit 3;
+
